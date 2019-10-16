@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e6ecf0;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important; /* Get a better definition to the font. !important = overwrite any font. */
+  -webkit-font-smoothing: antialiased !important; /* Reduce the visual defects that occur when high-resolution images are presented in a lower resolution. */
+}
+
+input,
+button {
+  outline: 0;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+#main-header {
+  height: 46px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+#main-header .content {
+  display: flex;
+  /* flex-direction: row by default, so 'align-items = vertical. */
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#main-header ul {
+  display: flex; /* flex-direction: row. */
+  list-style: none;
+}
+
+#main-header li {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #667580;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+#main-header li:first-child {
+  margin: 0;
+}
+
+.home-header-icons {
+  margin-right: 7px;
+  height: 15px;
+}
+
+.search-header {
+  display: flex;
+}
+
+.search-header input {
+  width: 220px;
+  border: 1px solid #e6ecf0;
+  height: 34px;
+  padding: 0 30px 0px 12px;
+  border-radius: 16px;
+  color: #667581;
+  font-size: 12px;
+  background: #f5f8fa url('images/search.svg') no-repeat 190px center;
+  background-size: 15px;
+}
+
+.search-header img {
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+.search-header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #3bb9e3;
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+}
