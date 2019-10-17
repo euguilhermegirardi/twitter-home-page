@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +16,23 @@ input,
 button {
   outline: 0;
 }
+/* GLOBAL STYLES ENDS */
 
+/* BODY ALIGN CONTENT (MARGIN BOTH SIDES OF THE PAGE */
 .content {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 30px;
 }
+/* BODY ALIGN CONTENT ENDS */
 
+/* MAIN HEADER */
 #main-header {
   height: 46px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
 }
 
 #main-header .content {
@@ -58,7 +65,9 @@ button {
   margin-right: 7px;
   height: 15px;
 }
+/* MAIN HEADER ENDS */
 
+/* SEARCH HEADER */
 .search-header {
   display: flex;
 }
@@ -94,3 +103,206 @@ button {
   border: 0;
   border-radius: 16px;
 }
+/* SEARCH HEADER ENDS */
+
+/* BANNER */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 380px;
+  width: 100%;
+  background: #3bb9e3;
+}
+/* BANNER ENDS */
+
+/* BAR */
+.bar {
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 285px;
+  height: 100%;
+}
+
+.bar ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.bar li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+  padding: 0 15px;
+  position: relative;
+}
+
+.bar span {
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar strong {
+  color: #667580;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.active::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #3bb9e3;
+}
+
+.active strong {
+  color: #3bb9e3;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
+.actions img {
+  margin-top: 10px;
+}
+/* BAR ENDS */
+
+/* PROFILE */
+.wrapper-profile {
+  display: flex;
+}
+
+.profile {
+  width: 260px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -130px;
+}
+
+.wrapper-profile h1 {
+  font-size: 21px;
+  color: #1f2226;
+  margin-top: 10px;
+}
+
+.wrapper-profile span {
+  font-size: 14px;
+  color: #53626c;
+}
+
+.wrapper-profile p {
+  font-size: 14px;
+  color: #53626c;
+  margin-top: 15px;
+}
+
+.wrapper-profile ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.wrapper-profile li {
+  display: flex;
+  align-items: center; /* vertical */
+  font-size: 14px;
+  color: #657786;
+}
+
+.wrapper-profile img {
+  margin-right: 10px;
+}
+
+.wrapper-profile img:first-child {
+  margin-top: 0;
+}
+
+.widgets {
+  margin-top: 20px;
+}
+
+.widgets strong {
+  display: flex;
+  align-items: center; /* vertical */
+  font-weight: normal;
+  color: #3bb9e3;
+  font-size: 14px;
+}
+
+.widgets img {
+  margin-right: 5px;
+}
+
+.followers ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.followers li {
+  /* flex: flex-grow + flex-shrink + flex-basis */
+  /* Grow = to extends the icons if necessary, to get full width of the container */
+  /* Shrink = Not get the other container, it squeeze everything in one container */
+  /* Basis = To get the right configuration */
+  flex: 1 0 auto;
+  width: 45px;
+  height: 45px;
+  background: #d0d5d9;
+  border-radius: 50%;
+  margin: 0 5px 10px 0;
+}
+
+.images ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.images li {
+  flex: 1 0 auto;
+  width: 80px;
+  height: 80px;
+  background: #d0d5d9;
+  border-radius: 8%;
+  margin: 0 5px 5px 0;
+}
+
+/* PROFILE ENDS */
