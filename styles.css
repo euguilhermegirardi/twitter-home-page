@@ -203,6 +203,7 @@ button {
 }
 
 .profile {
+  margin-top: -130px;
   width: 260px;
 }
 
@@ -251,11 +252,11 @@ button {
   margin-top: 0;
 }
 
-.widgets {
+.widget {
   margin-top: 20px;
 }
 
-.widgets strong {
+.widget strong {
   display: flex;
   align-items: center; /* vertical */
   font-weight: normal;
@@ -263,7 +264,7 @@ button {
   font-size: 14px;
 }
 
-.widgets img {
+.widget img {
   margin-right: 5px;
 }
 
@@ -304,5 +305,115 @@ button {
   border-radius: 8%;
   margin: 0 5px 5px 0;
 }
-
 /* PROFILE ENDS */
+
+/* TIMELINE */
+.timeline {
+  /* flex: 1 = To occupy all the size of the container. */
+  /*Container with 1170px - profile = 260 and widget = 267 so, timeline = 582. */
+  flex: 1; /* first element = flex-grow */
+}
+/* TIMELINW ENDS */
+
+/* WIDGET-RIGHT */
+.aside {
+  width: 290px;
+  margin-top: 15px;
+}
+
+.aside .who-to-follow {
+  background: #fff;
+  padding: 15px 15px 2px 15px;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+}
+
+.title strong {
+  font-size: 18px;
+  color: #1f2226;
+}
+
+.title a {
+  color: #3bb9e3;
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+.title a::before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #222;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.who-to-follow ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.who-to-follow li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-who-to-follow {
+  display: flex;
+  align-items: center;
+}
+
+.profile-who-to-follow img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+.info span {
+  font-weight: normal;
+  color: #9a9a9a;
+}
+
+.info button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 27px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+}
+
+.li-who-to-follow > a {
+  color: #ccd6dd;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* WIDGET-RIGHT ENDS */
