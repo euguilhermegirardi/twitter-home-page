@@ -312,13 +312,76 @@ button {
   /* flex: 1 = To occupy all the size of the container. */
   /*Container with 1170px - profile = 260 and widget = 267 so, timeline = 582. */
   flex: 1; /* first element = flex-grow */
+  background: #fff;
+  margin: 10px 20px 5px 20px;
 }
+
+.timeline nav {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+.timeline a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.timeline a:first-child {
+  margin-left: 0;
+}
+
+.timeline a.active2 {
+  color: #1f2226;
+}
+
+.timeline ul.tweets {
+  list-style: none;
+}
+
+.timeline ul.tweets li {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+.timeline ul.tweets li > img {
+  height: 48px;
+  border-radius: 50%;
+}
+
+.timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-icons,
+.timeline ul li a {
+  margin-right: 7px;
+  height: 12px;
+}
+
+.timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+.timeline ul.tweets li .info .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  margin-top: 20px;
+}
+
 /* TIMELINW ENDS */
 
 /* WIDGET-RIGHT */
 .aside {
   width: 290px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .aside .who-to-follow {
